@@ -1,0 +1,29 @@
+.containerOfHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9e9e9e86;
+    padding-inline: 10px;
+    position: fixed;
+    width: 100%;
+    border-radius: 90px;
+}
+.listContainer{
+    display: flex;
+    list-style-type: none;
+    cursor: pointer;
+}
+.listContainer li{
+    padding: 10px;
+}
+.listContainer li:hover{
+    color: aqua;
+    transition-duration: .2s;
+}
+
+.logo{
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
