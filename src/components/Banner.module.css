@@ -1,9 +1,8 @@
 .bannerContainer{
     position: relative;
-    top: 90px;
-    width: 100%;
+
 }
-.bannerImage{
+.banner img {
     position: absolute;
     height: 500px;
     width:100%;
@@ -11,7 +10,7 @@
 .BannerText {
     color: rgb(0, 0, 0);
     text-shadow: 0 0 10px #ffffff,0 0 20px #000000,0 0 25px #000000;
-    position: relative;
+    position: absolute;
     top:150px;
     left: 50px;
     display: inline-block;
