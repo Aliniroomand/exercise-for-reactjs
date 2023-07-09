@@ -1,0 +1,28 @@
+.container{
+    padding:20px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 255, 247, 0.298);
+    height: 100px;
+    width: 50%;
+    margin: 50px auto;
+    border-radius: 50%;
+}
+.container label{
+    font-size: 2rem;
+    text-shadow: 0 0 10px #ffffff,0 0 20px #000000,0 0 22px #000000;
+}
+.container input{
+    border:none ;
+    border-radius: 30px;
+    width: 200px;
+    height: 30px;
+    box-shadow:inset 3px 3px 10px #ffffff,inset -3px -3px 2px #000000;
+    padding-left: 50px;
+}
+.container input::placeholder{
+color: #0000009d;
+font-weight :400;
+font-size: 1rem;
+}

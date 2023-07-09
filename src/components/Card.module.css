@@ -4,20 +4,24 @@ flex-direction: column;
 justify-content:center;
 align-items: center;
 overflow: hidden;
+margin-top: 50px;
+}
+.container:hover{    cursor: pointer;
+    transform: scale(.9);
+    transition-duration: .3s;
+    color: rgb(0, 0, 60);
 }
 .container img{
     width: 250px;
-  
 }
-.container img:hover{
-    cursor: pointer;
-    transform: scale(.9);
-    transition-duration: .3s;
-}
+
 .container h3{
     font-size: 2rem;
     text-shadow: 0 0 10px #ffffff,0 0 20px #000000,0 0 25px #000000;
 }
 .container p{
     font-size: 1.6rem;
+    background-color: #0063b4a9;
+    border-radius: 30px;
+    padding-inline: 10px;
 }
