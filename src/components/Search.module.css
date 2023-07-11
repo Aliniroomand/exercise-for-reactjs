@@ -5,9 +5,9 @@
     justify-content: space-around;
     background-color: rgba(0, 255, 247, 0.298);
     height: 100px;
-    width: 50%;
+    width: calc(50% + 100px);
     margin: 50px auto;
-    border-radius: 50%;
+    border-radius: 20px;
 }
 .container label{
     font-size: 2rem;
