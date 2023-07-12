@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, createElement } from 'react';
 import styles from "../components/Card.module.css";
 import up from "../images/up.png";
 import down from "../images/down.png";
@@ -32,10 +32,12 @@ upHandler = ()=>{
             <div className={styles.container}>
                 <img src={image} alt="phone-image" />
                 <h3>{name}</h3>
-                <p>{price}</p>
+                <p>{price} 
+                { counter ? ` * ${counter} = ${counter * parseInt(price)} $` : ""}
+                </p>
                 
                 <div className={styles.counter}>
-                        <img src={down} className={(this.state.counter) ? "" : styles.deactive} alt='down' onClick={this.downHandler}/>
+                        <img src={down} className={ !counter && styles.deactive} alt='down' onClick={this.downHandler}/>
                         <span>{counter}</span>
                         <img src={up}alt='up'  onClick={this.upHandler}/>
                 </div>

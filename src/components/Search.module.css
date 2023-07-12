@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(0, 255, 247, 0.298);
+    background-color: rgba(19, 185, 180, 0.696);
     height: 100px;
     width: calc(50% + 100px);
     margin: 50px auto;
@@ -11,6 +11,7 @@
 }
 .container label{
     font-size: 2rem;
+    text-align: center;
     text-shadow: 0 0 10px #ffffff,0 0 20px #000000,0 0 22px #000000;
 }
 .container input{
