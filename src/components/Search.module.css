@@ -11,7 +11,7 @@
 }
 .container label{
     font-size: 2rem;
-    text-align: center;
+    text-align: center; 
     text-shadow: 0 0 10px #ffffff,0 0 20px #000000,0 0 22px #000000;
 }
 .container input{

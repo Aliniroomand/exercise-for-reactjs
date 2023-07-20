@@ -14,12 +14,20 @@
     list-style-type: none;
     cursor: pointer;
 }
-.listContainer li{
+.listContainer li a {
     padding: 10px;
+    text-decoration: none;
+    color: black;
 }
-.listContainer li:hover{
-    color: aqua;
+.listContainer li a:hover{
     transition-duration: .2s;
+    color: aqua;
+}
+.listContainer li a:focus{
+    color: rgb(0, 87, 87);
+    text-decoration: underline;
+    transition-duration: .9s;
+
 }
 
 .logo{
