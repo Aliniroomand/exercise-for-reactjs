@@ -7,7 +7,7 @@ const Banner = () => {
         <div className={styles.bannerContainer}>
             <img src={bannerImage} className={styles.bannerImage} alt='bannerImage'/>
             <div className={styles.BannerText}>
-               <h3> It's my First project in <h1>React</h1>
+               <h3> It's my First project in <br></br><span>React</span><br></br>
                 Also it's without using </h3>
                 <h4>"hooks" and "states"</h4>
             </div>

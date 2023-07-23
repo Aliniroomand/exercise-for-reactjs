@@ -13,19 +13,22 @@ margin-top: 50px;
     filter: contrast(150%);
 }
 .container img{
-    width: 250px;
+    width: 150px;
+    height: 150px;
 }
 
 
 .container h3{
-    font-size: 2rem;
+    font-size: 1rem;
     text-shadow: 0 0 10px #ffffff,0 0 20px #000000,0 0 25px #000000;
+    text-align: center;
 }
 .container p{
-    font-size: 1.6rem;
+    font-size: 1rem;
     background-color: #0063b4a9;
     border-radius: 30px;
-    padding-inline: 10px;
+    padding: 10px;
+    margin: 10px 0;
 }
     .counter{
         display: flex;
@@ -36,6 +39,7 @@ margin-top: 50px;
     }
     .counter img{
     width: 30px;
+    height: 40px;
     padding:10px 20px;
     }
     .counter img:hover{

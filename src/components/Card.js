@@ -25,15 +25,17 @@ upHandler = ()=>{
 
     )
 }
+
     render() {
-        const {image,name,price}=this.props;
+        const {image,name,price,title}=this.props;
         const{counter}=this.state;
         return (
             <div className={styles.container}>
-                <img src={image} alt="phone-image" />
+                <img src={image} onClick={this.explainAboutProduct}alt="product-image" />
                 <h3>{name}</h3>
+                <h3>{title}</h3>
                 <p>{price} 
-                { counter ? ` * ${counter} = ${counter * parseInt(price)} $` : ""}
+                { counter ? ` * ${counter} = ${counter * parseFloat(price)} $` : ""}
                 </p>
                 
                 <div className={styles.counter}>
