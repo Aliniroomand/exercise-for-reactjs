@@ -10,6 +10,7 @@ constructor() {
     super();
     this.state={
         counter:0,
+        
     }    
 }
 downHandler = () =>{
@@ -30,20 +31,24 @@ upHandler = ()=>{
         const {image,name,price,title}=this.props;
         const{counter}=this.state;
         return (
-            <div className={styles.container}>
-                <img src={image} onClick={this.explainAboutProduct}alt="product-image" />
-                <h3>{name}</h3>
-                <h3>{title}</h3>
-                <p>{price} 
-                { counter ? ` * ${counter} = ${counter * parseFloat(price)} $` : ""}
-                </p>
+            <div>
+                <div className={styles.container}>
+                    <img src={image} className={styles.productImage} onClick={this.explainAboutProduct}alt="product-image" />
+                    <h3>{name}</h3>
+                    <h3>{title}</h3>
+                </div>
                 
                 <div className={styles.counter}>
+                    <p>{price} 
+                    { counter ? ` * ${counter} = ${counter *parseInt(price)} $` : ""}
+                    </p>
+                        <span className={styles.counterHandler}>
                         <img src={down} className={ !counter && styles.deactive} alt='down' onClick={this.downHandler}/>
                         <span>{counter}</span>
                         <img src={up}alt='up'  onClick={this.upHandler}/>
+                        </span>
                 </div>
-            </div>
+                </div>
         );
     }
 }
